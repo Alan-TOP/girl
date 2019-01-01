@@ -1,0 +1,25 @@
+server:
+  port: 8081
+  servlet:
+    context-path: /girl
+
+girl:
+  cupSize: B
+  age: 18
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/spring_boot
+    username: alan
+    password: qwerty
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  profiles:
+    active: ext
+
+cupSize: G
+height: 66
+content: "cupSize: ${cupSize}, age: ${height}"
